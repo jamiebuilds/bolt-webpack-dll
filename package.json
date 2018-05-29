@@ -1,0 +1,21 @@
+{
+  "name": "bolt-webpack-dll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "bolt": {
+    "workspaces": [
+      "utils/*",
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "build": "bolt workspaces run build",
+    "clean": "bolt workspaces exec -- rm -rf dist"
+  },
+  "devDependencies": {
+    "webpack": "^4.10.1",
+    "webpack-cli": "^2.1.4"
+  }
+}
