@@ -3,9 +3,6 @@ var webpack = require('webpack');
 
 module.exports = {
 	mode: 'none',
-	resolve: {
-		extensions: ['.js', '.jsx']
-	},
 	entry: {
     index: ['./index.js'],
 	},
